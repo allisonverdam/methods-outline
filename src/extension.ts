@@ -18,7 +18,10 @@ export function activate(context: vscode.ExtensionContext) {
         // The code you place here will be executed every time your command is executed
 
         // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
+        //vscode.window.showInformationMessage('Hello World!');
+        vscode.commands.executeCommand('workbench.action.gotoSymbol');
+        
+        //workbench.action.files.openFile
     });
 
     context.subscriptions.push(disposable);
